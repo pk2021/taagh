@@ -1,0 +1,16 @@
+.image-uploade-zone {
+    width: 120px;
+    height: 120px;
+    border: 1px dashed #bdbdbd;
+    color: #bdbdbd;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 120px;
+    margin: 5px 3px 0;
+    cursor: pointer;
+    margin-right: 35px;
+}
+.uploade-img {
+  width: 125px;
+  height: 125px;
+}

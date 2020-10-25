@@ -1,0 +1,776 @@
+<!doctype html>
+{% load static %}
+<html class="no-js"  lang="en">
+
+	<head>
+		<!-- META DATA -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet" />
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+		<!-- TITLE OF SITE -->
+		<title>Travel</title>
+
+		<!-- favicon img -->
+		<link rel="shortcut icon" type="image/icon" href="{% static "logo/favicon.png" %}"/>
+
+		<!--font-awesome.min.css-->
+		<link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" />
+
+		<!--animate.css-->
+		<link rel="stylesheet" href="{% static "css/animate.css" %}" />
+
+		<!--hover.css-->
+		<link rel="stylesheet" href="{% static "css/hover-min.css" %}">
+
+		<!--datepicker.css-->
+		<link rel="stylesheet"  href="{% static "css/datepicker.css" %}" >
+
+		<!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+		<link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}"/>
+
+		<!-- range css-->
+        <link rel="stylesheet" href="{% static "css/jquery-ui.min.css" %}" />
+
+		<!--bootstrap.min.css-->
+		<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{% static "css/bootsnav.css" %}"/>
+
+		<!--style.css-->
+		<link rel="stylesheet" href="{% static "css/style.css" %}" />
+
+		<!--responsive.css-->
+		<link rel="stylesheet" href="{% static "css/responsive.css" %}" />
+
+		<!--custom.css-->
+		<link rel="stylesheet" href="{% static "css/custom.css" %}" />
+
+		<!--stepper.css-->
+		<link rel="stylesheet" href="{% static "css/bs-stepper.min.css" %}">
+
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body style="direction: rtl;">
+		<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+			your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+
+		<!-- main-menu Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="logo">
+								<a href="index.html">
+									taa<span>gh</span>
+								</a>
+							</div><!-- /.logo-->
+						</div><!-- /.col-->
+						<div class="col-sm-10">
+							<div class="main-menu">
+
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+										<i class="fa fa-bars"></i>
+									</button><!-- / button-->
+								</div><!-- /.navbar-header-->
+								<div class="collapse navbar-collapse">
+									<ul class="nav navbar-nav navbar-right">
+										<li class="smooth-menu"><a href="">کالا های من</a></li>
+										<li class="smooth-menu"><a href="#home">خانه</a></li>
+										<li>
+											<button class="book-btn">ورود/عضویت
+											</button>
+										</li><!--/.project-btn-->
+									</ul>
+								</div><!-- /.navbar-collapse -->
+							</div><!-- /.main-menu-->
+						</div><!-- /.col-->
+					</div><!-- /.row -->
+					<div class="home-border"></div><!-- /.home-border-->
+				</div><!-- /.container-->
+			</div><!-- /.header-area -->
+
+		</header><!-- /.top-area-->
+		<!-- main-menu End -->
+
+
+		<!--about-us start -->
+		<section id="home" class="about-us">
+			<div class="container">
+				<div class="about-us-content">
+					<div class="row ">
+						<div class="col-sm-12 text-center">
+							<div class="single-about-us">
+								<div class="about-us-txt">
+									<h2>
+										 چیزتو <span>طاق</span> بزن!
+
+									</h2><br><br>
+									<div class="custom-input-group">
+										<button style="float: left;"class="appsLand-btn subscribe-btn">جست و جو</button>
+										<input style="padding-right: 57px;" type="email" class="form-control" placeholder="">
+										<div class="clearfix"></div>
+									</div>
+								</div><!--/.about-us-txt-->
+							</div><!--/.single-about-us-->
+						</div><!--/.col-->
+						<div class="col-sm-0">
+							<div class="single-about-us">
+
+							</div><!--/.single-about-us-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.about-us-content-->
+			</div><!--/.container-->
+
+		</section><!--/.about-us-->
+		<!--about-us end -->
+
+		<!--main-box start-->
+		<section  class="main-box">
+        	<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div style="height: 393px;" class="single-travel-boxes">
+
+						<div id="stepper1" class="bs-stepper">
+					 <div class="bs-stepper-header">
+						 <div class="step" data-target="#test-nl-1">
+							 <button type="button" class="btn step-trigger">
+								 <span class="bs-stepper-circle">1</span>
+								 <span class="bs-stepper-label">مشخصات کالا</span>
+							 </button>
+						 </div>
+						 <div class="line"></div>
+						 <div class="step" data-target="#test-nl-2">
+							 <div class="btn step-trigger">
+								 <span class="bs-stepper-circle">2</span>
+								 <span class="bs-stepper-label">عکس کالا</span>
+							 </div>
+						 </div>
+						 <div class="line"></div>
+						 <div class="step" data-target="#test-nl-3">
+							 <button type="button" class="btn step-trigger">
+								 <span class="bs-stepper-circle">3</span>
+								 <span class="bs-stepper-label">ثبت آگهی</span>
+							 </button>
+						 </div>
+					 </div>
+					 <div class="bs-stepper-content">
+              <div id="test-nl-1" class="content">
+								<form method="post" class="form-row">
+									<div class="col-sm-12 col-md-4 pull-right">
+										<label for="name">نام کالا:</label>
+										<input type="text" class="form-control" id="inputname">
+										<label for="quantity">تعداد:</label>
+										<input type="number" class="form-control" id="inputAddress" value='1'>
+									</div>
+									<div class="col-sm-12 col-md-8">
+										<label for="description">توضیحات کالا:</label>
+										<input style="height:94px;"type="text" class="form-control" id="description">
+									</div>
+								</form>
+								<div class="row">
+									<div style="margin-top: 30px; padding-right: 30px;"class="pull-right col-md-4 col-sm-12">
+										<h3>قیمت  : </h3>
+										<div class="travel-filter">
+											<div class="info_widget">
+												<div class="price_filter">
+
+													<div id="slider-range"></div><!--/.slider-range-->
+
+													<div class="price_slider_amount">
+														<input style="background-color:white;" class="form-control" type="text" id="amount" name="price"  placeholder="Add Your Price" readonly>
+													</div><!--/.price_slider_amount-->
+												</div><!--/.price-filter-->
+											</div><!--/.info_widget-->
+										</div><!--/.travel-filter-->
+									</div><!--/.col-->
+								</div><!--/.row-->
+								<div class="row">
+									<div class="col">
+										<div class="about-btn pull-left">
+											<button class="about-view travel-btn" onclick="stepper1.next()">بعدی</button>
+										</div>
+										<div class="about-btn pull-right">
+											<button class="about-view travel-btn" onclick="stepper1.previous()">قبلی</button>
+										</div>
+									</div>
+								</div>
+						</div>
+              <div id="test-nl-2" class="content">
+								<div class="row ">
+									<div class="col-md-2 pull-right">
+										<div class="image-uploade-zone justify-content-md-center">
+											<ion-icon style="font-size: 64px; margin-top: 22px;" name="camera"></ion-icon>
+											<input accept=".jpg,.png" type="file" multiple style="position: absolute;
+																																						top: 0px;left: 0px;right: 0px;bottom: 0px;
+																																						opacity: 1e-05;cursor: pointer;">
+										</div>
+									</div>
+									<div class="col-md-10">
+										<img src="{% static "images/1.jpg" %}" Class=" uploade-img rounded img-thumbnail">
+										<img src="{% static "images/1.jpg" %}" Class=" uploade-img rounded img-thumbnail">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<div class="about-btn pull-left">
+											<button class="about-view travel-btn" onclick="stepper1.next()">بعدی</button>
+										</div>
+										<div class="about-btn pull-right">
+											<button class="about-view travel-btn" onclick="stepper1.previous()">قبلی</button>
+										</div>
+									</div>
+								</div>
+              </div>
+              <div id="test-nl-3" class="content">
+								<div class="form-row">
+									<div class="col-md-6 col-sm-12 mx-auto">
+										<p class="text-center">ثبت نام</p>
+									</div>
+									<div class="col-md-6 col-sm-12 mx-auto">
+										<p class="text-center">ورود</p><br><br>
+										<form class="" action="index.html" method="post">
+											<label for="name">نام کاربری:</label>
+											<input type="text" class="form-control is-valid" id="username" placeholder="ایمیل یا شماره موبایل">
+											<div class="invalid-feedback">
+												نام کاربری اشتباه است
+											</div>
+											<label for="quantity">رمز عبور:</label>
+											<input type="password" class="form-control" id="password">
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<div class="about-btn pull-left">
+											<button class="about-view travel-btn" onclick="stepper1.next()">ثبت</button>
+										</div>
+										<div class="about-btn pull-right">
+											<button class="about-view travel-btn" onclick="stepper1.previous()">قبلی</button>
+										</div>
+									</div>
+								</div>
+              </div>
+            </div>
+          </div>
+
+
+				</div><!--/.single-travel-box-->
+			</div><!--/.col-->
+		</div><!--/.row-->
+        	</div><!--/.container-->
+        </section><!--/.mainbox->
+		<!-mainbox end-->
+
+        <!--service start-->
+		<section id="service" class="service">
+			<div class="container">
+
+				<div class="service-counter text-center">
+
+					<div class="col-md-4 col-sm-4">
+						<div class="single-service-box">
+							<div class="service-img">
+								<img src="{% static "images/service/s1.png" %}" alt="service-icon" />
+							</div><!--/.service-img-->
+							<div class="service-content">
+								<h2>
+									<a href="#">
+									amazing tour packages
+									</a>
+								</h2>
+								<p>Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.</p>
+							</div><!--/.service-content-->
+						</div><!--/.single-service-box-->
+					</div><!--/.col-->
+
+					<div class="col-md-4 col-sm-4">
+						<div class="single-service-box">
+							<div class="service-img">
+								<img src="{% static "images/service/s2.png" %}" alt="service-icon" />
+							</div><!--/.service-img-->
+							<div class="service-content">
+								<h2>
+									<a href="#">
+										book top class hotel
+									</a>
+								</h2>
+								<p>Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.</p>
+							</div><!--/.service-content-->
+						</div><!--/.single-service-box-->
+					</div><!--/.col-->
+
+					<div class="col-md-4 col-sm-4">
+						<div class="single-service-box">
+							<div class="statistics-img">
+								<img src="{% static "images/service/s3.png" %}" alt="service-icon" />
+							</div><!--/.service-img-->
+							<div class="service-content">
+
+								<h2>
+									<a href="#">
+										online flight booking
+									</a>
+								</h2>
+								<p>Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.</p>
+							</div><!--/.service-content-->
+						</div><!--/.single-service-box-->
+					</div><!--/.col-->
+
+				</div><!--/.statistics-counter-->
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+
+
+		<!--packages start-->
+		<section id="pack" class="packages testemonial">
+			<div class="container">
+				<div class="gallary-header text-center">
+					<h2>
+						special packages
+					</h2>
+					<p>
+						Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.
+					</p>
+				</div><!--/.gallery-header-->
+				<div class="packages-content">
+					<div class="row">
+
+						<div class="col-md-4 col-sm-6">
+							<div class="single-package-item">
+								<img src="{% static "images/packages/p1.jpg" %}" alt="package-place">
+								<div class="single-package-item-txt">
+									<h3>italy <span class="pull-right">$499</span></h3>
+									<div class="packages-para">
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+											<i class="fa fa-angle-right"></i>  5 star accomodation
+										</p>
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+											<i class="fa fa-angle-right"></i>  food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<span>2544 review</span>
+										</p>
+									</div><!--/.packages-review-->
+									<div class="about-btn">
+										<button  class="about-view packages-btn">
+											book now
+										</button>
+									</div><!--/.about-btn-->
+								</div><!--/.single-package-item-txt-->
+							</div><!--/.single-package-item-->
+
+						</div><!--/.col-->
+
+						<div class="col-md-4 col-sm-6">
+							<div class="single-package-item">
+								<img src="{% static "images/packages/p2.jpg" %}" alt="package-place">
+								<div class="single-package-item-txt">
+									<h3>england <span class="pull-right">$1499</span></h3>
+									<div class="packages-para">
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+											<i class="fa fa-angle-right"></i>  5 star accomodation
+										</p>
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+											<i class="fa fa-angle-right"></i>  food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<span>2544 review</span>
+										</p>
+									</div><!--/.packages-review-->
+									<div class="about-btn">
+										<button  class="about-view packages-btn">
+											book now
+										</button>
+									</div><!--/.about-btn-->
+								</div><!--/.single-package-item-txt-->
+							</div><!--/.single-package-item-->
+
+						</div><!--/.col-->
+
+						<div class="col-md-4 col-sm-6">
+							<div class="single-package-item">
+								<img src="{% static "images/packages/p3.jpg" %}" alt="package-place">
+								<div class="single-package-item-txt">
+									<h3>france <span class="pull-right">$1199</span></h3>
+									<div class="packages-para">
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+											<i class="fa fa-angle-right"></i>  5 star accomodation
+										</p>
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+											<i class="fa fa-angle-right"></i>  food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<span>2544 review</span>
+										</p>
+									</div><!--/.packages-review-->
+									<div class="about-btn">
+										<button  class="about-view packages-btn">
+											book now
+										</button>
+									</div><!--/.about-btn-->
+								</div><!--/.single-package-item-txt-->
+							</div><!--/.single-package-item-->
+
+						</div><!--/.col-->
+
+						<div class="col-md-4 col-sm-6">
+							<div class="single-package-item">
+								<img src="{% static "images/packages/p4.jpg" %}" alt="package-place">
+								<div class="single-package-item-txt">
+									<h3>india <span class="pull-right">$799</span></h3>
+									<div class="packages-para">
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+											<i class="fa fa-angle-right"></i>  5 star accomodation
+										</p>
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+											<i class="fa fa-angle-right"></i>  food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<span>2544 review</span>
+										</p>
+									</div><!--/.packages-review-->
+									<div class="about-btn">
+										<button  class="about-view packages-btn">
+											book now
+										</button>
+									</div><!--/.about-btn-->
+								</div><!--/.single-package-item-txt-->
+							</div><!--/.single-package-item-->
+
+						</div><!--/.col-->
+
+						<div class="col-md-4 col-sm-6">
+							<div class="single-package-item">
+								<img src="{% static "images/packages/p5.jpg" %}" alt="package-place">
+								<div class="single-package-item-txt">
+									<h3>spain <span class="pull-right">$999</span></h3>
+									<div class="packages-para">
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+											<i class="fa fa-angle-right"></i>  5 star accomodation
+										</p>
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+											<i class="fa fa-angle-right"></i>  food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<span>2544 review</span>
+										</p>
+									</div><!--/.packages-review-->
+									<div class="about-btn">
+										<button  class="about-view packages-btn">
+											book now
+										</button>
+									</div><!--/.about-btn-->
+								</div><!--/.single-package-item-txt-->
+							</div><!--/.single-package-item-->
+
+						</div><!--/.col-->
+
+						<div class="col-md-4 col-sm-6">
+							<div class="single-package-item">
+								<img src="{% static "images/packages/p6.jpg" %}" alt="package-place">
+								<div class="single-package-item-txt">
+									<h3>thailand <span class="pull-right">$799</span></h3>
+									<div class="packages-para">
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+											<i class="fa fa-angle-right"></i>  5 star accomodation
+										</p>
+										<p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+											<i class="fa fa-angle-right"></i>  food facilities
+										 </p>
+									</div><!--/.packages-para-->
+									<div class="packages-review">
+										<p>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<span>2544 review</span>
+										</p>
+									</div><!--/.packages-review-->
+									<div class="about-btn">
+										<button  class="about-view packages-btn">
+											book now
+										</button>
+									</div><!--/.about-btn-->
+								</div><!--/.single-package-item-txt-->
+							</div><!--/.single-package-item-->
+
+						</div><!--/.col-->
+
+					</div><!--/.row-->
+				</div><!--/.packages-content-->
+			</div><!--/.container-->
+
+		</section><!--/.packages-->
+		<!--packages end-->
+
+
+		<!--subscribe start-->
+		<section id="subs" class="subscribe">
+			<div class="container">
+				<div class="subscribe-title text-center">
+					<h2>
+						با عضویت در خبرنامه جدید ترین خبر هارو بدون
+					</h2>
+					<p>
+						با وارد کردن ایمیل همین حالا عضو شو!
+					</p>
+				</div>
+				<form>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+							<div class="custom-input-group">
+								<button style="float: left;" class="appsLand-btn subscribe-btn">عضویت</button>
+								<input style="padding-right: 57px;"type="email" class="form-control" placeholder="ایمیلت وارد کن">
+								<i style="position: relative; left: -26px;"class="fa fa-envelope"></i>
+								<div class="clearfix"></div>
+
+							</div>
+
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</section>
+		<!--subscribe end-->
+
+		<!-- footer-copyright start -->
+		<footer  class="footer-copyright">
+			<div class="container">
+				<div class="footer-content">
+					<div class="row">
+
+						<div class="col-sm-3">
+							<div class="single-footer-item">
+								<div class="footer-logo">
+									<a href="index.html">
+										taa<span>gh</span>
+									</a>
+									<p>
+										کالاتو طاق بزن
+									</p>
+								</div>
+							</div><!--/.single-footer-item-->
+						</div><!--/.col-->
+
+						<div class="col-sm-3">
+							<div class="single-footer-item">
+								<h2>link</h2>
+								<div class="single-footer-txt">
+									<p><a href="#">home</a></p>
+									<p><a href="#">destination</a></p>
+									<p><a href="#">spacial packages</a></p>
+									<p><a href="#">special offers</a></p>
+									<p><a href="#">blog</a></p>
+									<p><a href="#">contacts</a></p>
+								</div><!--/.single-footer-txt-->
+							</div><!--/.single-footer-item-->
+
+						</div><!--/.col-->
+
+						<div class="col-sm-3">
+							<div class="single-footer-item">
+								<h2>popular destination</h2>
+								<div class="single-footer-txt">
+									<p><a href="#">china</a></p>
+									<p><a href="#">venezuela</a></p>
+									<p><a href="#">brazil</a></p>
+									<p><a href="#">australia</a></p>
+									<p><a href="#">london</a></p>
+								</div><!--/.single-footer-txt-->
+							</div><!--/.single-footer-item-->
+						</div><!--/.col-->
+
+						<div class="col-sm-3">
+							<div class="single-footer-item text-center">
+								<h2 class="text-left">contacts</h2>
+								<div class="single-footer-txt text-left">
+									<p>+1 (300) 1234 6543</p>
+									<p class="foot-email"><a href="#">info@tnest.com</a></p>
+									<p>North Warnner Park 336/A</p>
+									<p>Newyork, USA</p>
+								</div><!--/.single-footer-txt-->
+							</div><!--/.single-footer-item-->
+						</div><!--/.col-->
+
+					</div><!--/.row-->
+
+				</div><!--/.footer-content-->
+				<hr>
+				<div class="foot-icons ">
+					<ul class="footer-social-links list-inline list-unstyled">
+		                <li><a href="#" target="_blank" class="foot-icon-bg-1"><i class="fa fa-facebook"></i></a></li>
+		                <li><a href="#" target="_blank" class="foot-icon-bg-2"><i class="fa fa-twitter"></i></a></li>
+		                <li><a href="#" target="_blank" class="foot-icon-bg-3"><i class="fa fa-instagram"></i></a></li>
+		        	</ul>
+		        	<p><a href="">PK2021</a>:designed by</p>
+
+		        </div><!--/.foot-icons-->
+				<div id="scroll-Top">
+					<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div><!--/.scroll-Top-->
+			</div><!-- /.container-->
+
+		</footer><!-- /.footer-copyright-->
+		<!-- footer-copyright end -->
+
+
+
+
+		<script src="{% static "js/jquery.js" %}"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+		<!--modernizr.min.js-->
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+		<!--bootstrap.min.js-->
+		<script  src="{% static "js/bootstrap.min.js" %}"></script>
+
+		<!-- bootsnav js -->
+		<script src="{% static "js/bootsnav.js" %}"></script>
+
+		<!-- jquery.filterizr.min.js -->
+		<script src="{% static "js/jquery.filterizr.min.js" %}"></script>
+
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+		<!--ionicons-->
+		<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+		<!--jquery-ui.min.js-->
+        <script src="{% static "js/jquery-ui.min.js" %}"></script>
+
+        <!-- counter js -->
+		<script src="{% static "js/jquery.counterup.min.js" %}"></script>
+		<script src="{% static "js/waypoints.min.js" %}"></script>
+
+		<!--owl.carousel.js-->
+        <script  src="{% static "js/owl.carousel.min.js" %}"></script>
+
+        <!-- jquery.sticky.js -->
+		<script src="{% static "js/jquery.sticky.js" %}"></script>
+
+        <!--datepicker.js-->
+        <script  src="{% static "js/datepicker.js" %}"></script>
+
+		<!--Custom JS-->
+		<script src="{% static "js/custom.js" %}"></script>
+
+		<!--stepper JS-->
+		<script src="{% static "js/bs-stepper.min.js" %}"></script>
+
+		<script>
+			var stepper1Node = document.querySelector('#stepper1')
+     var stepper1 = new Stepper(document.querySelector('#stepper1'))
+
+     stepper1Node.addEventListener('show.bs-stepper', function (event) {
+       console.warn('show.bs-stepper', event)
+     })
+     stepper1Node.addEventListener('shown.bs-stepper', function (event) {
+       console.warn('shown.bs-stepper', event)
+     })
+</script>
+	</body>
+
+</html>
