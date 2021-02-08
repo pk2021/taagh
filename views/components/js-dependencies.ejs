@@ -1,0 +1,56 @@
+
+<!-- javascript -->
+<script src="/js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!--modernizr.min.js-->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+<!--bootstrap.min.js-->
+<script  src="/js/bootstrap.min.js"></script>
+
+<!-- bootsnav js -->
+<script src="/js/bootsnav.js"></script>
+
+<!-- jquery.filterizr.min.js -->
+<script src="/js/jquery.filterizr.min.js"></script>
+
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<!--ionicons-->
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+<!--jquery-ui.min.js-->
+<script src="/js/jquery-ui.min.js"></script>
+
+<!-- counter js -->
+<script src="/js/jquery.counterup.min.js"></script>
+<script src="/js/waypoints.min.js"></script>
+
+<!--owl.carousel.js-->
+<script  src="/js/owl.carousel.min.js"></script>
+
+<!-- jquery.sticky.js -->
+<script src="/js/jquery.sticky.js"></script>
+
+<!--datepicker.js-->
+<script  src="/js/datepicker.js"></script>
+
+<!--Custom JS-->
+<script src="/js/custom.js"></script>
+
+<!--stepper JS-->
+<script src="/js/bs-stepper.min.js"></script>
+
+<script>
+    var stepper1Node = document.querySelector('#stepper1')
+    var stepper1 = new Stepper(document.querySelector('#stepper1'))
+
+    stepper1Node.addEventListener('show.bs-stepper', function (event) {
+    console.warn('show.bs-stepper', event)
+    })
+    stepper1Node.addEventListener('shown.bs-stepper', function (event) {
+    console.warn('shown.bs-stepper', event)
+    })
+</script>

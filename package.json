@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/pk2021/taagh/issues"
   },
-  "homepage": "https://github.com/pk2021/taagh#readme"
+  "homepage": "https://github.com/pk2021/taagh#readme",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "auto-bind": "^4.0.0",
+    "bootstrap-icons": "^1.1.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.7.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.0",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
 }

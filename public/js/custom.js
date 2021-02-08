@@ -54,17 +54,24 @@ $(document).ready(function(){
 			return false;
 
 		});
+        // number spliter
+        function numberWithCommas(x) {
+            var parts = x.toString().split(".");
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return parts.join(".");
+        }
+        // 2. range js
 
-    // 2. range js
+
 
         $( "#slider-range" ).slider({
             range: true,
-            min: 0,
+            min: 1000,
             max: 100000000,
-						step: 1000,
-            values: [ 10000, 10000000 ],
+			step: 1000,
+            values: [ 1000000, 10000000 ],
             slide: function( event, ui ) {
-            $( "#amount" ).val( ui.values[ 1 ] + " - " + ui.values[ 0 ] +" تومان ");
+            $( "#amount" ).val( numberWithCommas(ui.values[ 1 ]) + " - " + numberWithCommas(ui.values[ 0 ]) +" تومان ");
             }
         });
         $( "#amount" ).val( $( "#slider-range" ).slider( "values", 1 ) +
@@ -196,3 +203,5 @@ $(document).ready(function(){
         });
 				
 });
+
+

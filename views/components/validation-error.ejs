@@ -1,0 +1,9 @@
+<% if(errors.length){ %>
+<div>
+  <ul>
+    <% errors.forEach(error=>{ %>
+    <li><%= error %></li>
+    <% }) %>
+  </ul>
+</div>
+<% } %>
