@@ -1,0 +1,48 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+}
+.col2{
+    flex: 10;
+}
+.col1{
+    flex: 1;
+}
+.col3{
+    flex: 2;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.product-name{
+    grid-column: 1/-1;
+}
+.product-discription{
+    grid-column: 1/-1;
+}
+.product-user-image{
+    grid-column: 1;
+}
+.product-user-name{
+    grid-column: 2/-1;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width:970px){
+    .col3{
+        flex: 0;
+    }
+    .large-screen{
+        display: none;
+    }
+}

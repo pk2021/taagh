@@ -1,573 +1,170 @@
-<!doctype html>
-<html class="no-js"  lang="en">
-
-	<head>
-		<%-include('components/css-dependencies')-%>
-	</head>
-
-	<body style="direction: rtl;">
-		<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-			your browser</a> to improve your experience and security.</p>
-		<![endif]-->
-
-		<!-- main-menu Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-2">
-							<a href="<%= button.href %>"class="book-btn register-btn pull-left"style="margin-top: 25px;width: 125px;">
-							<%= button.text %>
-							</a>
-						</div><!-- /.col-->
-						<div class="col-sm-9">
-							<div class="main-menu">
-								
-								<!-- Brand and toggle get grouped for better mobile display -->
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-										<i class="fa fa-bars"></i>
-									</button><!-- / button-->
-								</div><!-- /.navbar-header-->
-								<div class="collapse navbar-collapse">
-									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth-menu"><a href="/about-us">درباره ما</a></li>
-
-										<% if(signedin){ %>
-										<li class="smooth-menu"><a href="">کالا های من</a></li>
-										<%}%>
-										<li class="smooth-menu"><a href="#home">خانه</a></li>
-										<li>
-										</li><!--/.project-btn-->
-									</ul>
-								</div><!-- /.navbar-collapse -->
-							</div><!-- /.main-menu-->
-						</div><!-- /.col-->
-						<div class="col-sm-1">
-							<div class="logo">
-								<a href="/">
-									taa<span>gh</span>
-								</a>
-							</div><!-- /.logo-->
-						</div>
-					</div><!-- /.row -->
-					<div class="home-border"></div><!-- /.home-border-->
-				</div><!-- /.container-->
-			</div><!-- /.header-area -->
-
-		</header><!-- /.top-area-->
-		<!-- main-menu End -->
-
-
-		<!--about-us start -->
-		<section id="home" class="about-us">
-			<div class="container">
-				<div class="about-us-content">
-					<div class="row ">
-						<div class="col-sm-12 text-center">
-							<div class="single-about-us">
-								<div class="about-us-txt">
-									<h2>
-										 کالاتو <span>طاق</span> بزن!
-
-									</h2><br><br>
-									<div class="custom-input-group">
-										<button style="float: left;"class="appsLand-btn subscribe-btn">جست و جو</button>
-										<input style="padding-right: 57px;" type="email" class="form-control" placeholder="">
-										<div class="clearfix"></div>
-									</div>
-								</div><!--/.about-us-txt-->
-							</div><!--/.single-about-us-->
-						</div><!--/.col-->
-						<div class="col-sm-0">
-							<div class="single-about-us">
-
-							</div><!--/.single-about-us-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.about-us-content-->
-			</div><!--/.container-->
-
-		</section><!--/.about-us-->
-		<!--about-us end -->
-
-		<!--main-box start-->
-		<section  class="main-box">
-        	<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div style="height: 415px;" class="single-travel-boxes">
-							<div id="stepper1" class="bs-stepper">
-								<div class="bs-stepper-header">
-									<div class="step" data-target="#test-nl-1">
-										<button type="button" class="btn step-trigger">
-											<span class="bs-stepper-circle">1</span>
-											<span class="bs-stepper-label">مشخصات کالا</span>
-										</button>
-									</div>
-									<div class="line"></div>
-									<div class="step" data-target="#test-nl-2">
-										<div class="btn step-trigger">
-											<span class="bs-stepper-circle">2</span>
-											<span class="bs-stepper-label">عکس کالا</span>
-										</div>
-									</div>
-									<div class="line"></div>
-									<div class="step" data-target="#test-nl-3">
-										<button type="button" class="btn step-trigger">
-											<span class="bs-stepper-circle">3</span>
-											<span class="bs-stepper-label">ثبت آگهی</span>
-										</button>
-									</div>
-								</div>
-								<div class="bs-stepper-content">
-									<div id="test-nl-1" class="content">
-										<form method="post" class="form-row">
-											<div class="col-sm-12 col-md-4 pull-right">
-												<label for="name">نام کالا:</label>
-												<input type="text" class="form-control" id="inputname">
-												<label for="quantity">تعداد:</label>
-												<input type="number" class="form-control" id="inputAddress" value='1'>
-												<label for="city">شهر:</label>
-												<input type="text" class="form-control" id="city">
-											</div>
-											<div class="col-sm-12 col-md-8">
-												<label for="description">توضیحات کالا:</label>
-												<input style="height:94px;"type="text" class="form-control" id="description">
-												<div style="margin-top: 30px; padding-right: 30px;">
-													<h4><b>ارزش کالا: </b><h4>
-													<div class="travel-filter">
-														<div class="info_widget">
-															<div class="price_filter">
-																<div id="slider-range"></div><!--/.slider-range-->
-																<div class="price_slider_amount">
-																	<input style="background-color:white;" class="form-control" type="text" id="amount" name="price"  placeholder="Add Your Price" readonly>
-																</div><!--/.price_slider_amount-->
-															</div><!--/.price-filter-->
-														</div><!--/.info_widget-->
-													</div><!--/.travel-filter-->
-												</div><!--/.col-->
-											</div>
-										</form>
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="about-btn pull-left">
-													<button class="about-view travel-btn" onclick="stepper1.next()">بعدی</button>
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="about-btn pull-right">
-													<button class="about-view travel-btn" onclick="stepper1.previous()">قبلی</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div id="test-nl-2" class="content">
-										<div class="row "style="margin-top:34px;">
-											<div class="col-md-2 pull-right">
-												<div class="image-uploade-zone justify-content-md-center">
-													<ion-icon style="font-size: 64px; margin-top: 22px;" name="camera"></ion-icon>
-													<input accept=".jpg,.png" type="file" multiple style="position: absolute;
-																																								top: 0px;left: 0px;right: 0px;bottom: 0px;
-																																								opacity: 1e-05;cursor: pointer;">
-												</div>
-											</div>
-											<div class="col-md-10">
-												<img src="/images/1.jpg" Class=" uploade-img rounded img-thumbnail">
-												<img src="/images/1.jpg" Class=" uploade-img rounded img-thumbnail">
-											</div>
-										</div>
-										<div class="row">
-											<div class="col"style="margin-top: 70px;">
-												<div class="about-btn pull-left">
-													<button class="about-view travel-btn" onclick="stepper1.next()">بعدی</button>
-												</div>
-												<div class="about-btn pull-right">
-													<button class="about-view travel-btn" onclick="stepper1.previous()">قبلی</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div id="test-nl-3" class="content">
-										<div class="form-row">
-											<% if(!signedin){ %>
-												<div class="col-md-6 text-center"><br><p>
-													برای ثبت آگهی لطفا وارد حساب کاربری خود شوید
-												</p>
-											</div>
-												<div class="col-md-6 col-sm-12">
-													<form class="" action="index.html" method="post">
-														<label for="name">نام کاربری:</label>
-														<input type="text" class="form-control is-valid" id="username" placeholder="ایمیل یا شماره موبایل">
-														<label for="quantity">رمز عبور:</label>
-														<input type="password" class="form-control" id="password">
-													</form><br>
-													<a href="/auth/register"><b>هنوز ثبتنام نکرده اید؟</b></a>
-												</div>
-											<%}else{%>
-
-												<%}%>
-										</div>
-										<div class="row">
-											<div class="col">
-												<div class="about-btn pull-left">
-													<button class="about-view travel-btn" type="submit">ثبت</button>
-												</div>
-												<div class="about-btn pull-right">
-													<button class="about-view travel-btn" onclick="stepper1.previous()">قبلی</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!--/.single-travel-box-->
-				</div><!--/.col-->
-			</div><!--/.row-->
-		</div><!--/.container-->
-	</section><!--/.mainbox->
-	<!-mainbox end-->
-
-
-		<!--packages start-->
-		<section id="pack" class="packages testemonial">
-			<div class="container">
-				<div class="gallary-header text-center">
-					<h2>
-						کالاها
-					</h2>
-				</div><!--/.gallery-header-->
-				<div class="packages-content">
-					<div class="row">
-
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="/images/packages/p1.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>نام کالا <span class="pull-left">شهر</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												ارزش :
-											</span>
-												500000  
-											<i class="fa fa-angle-right"></i> 
-												100000  
-										</p>
-										<p>
-											<span>
-												تعداد : 1
-											</span>
-										 </p><hr>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<span><b>صاحب کالا</b></span>
-										<span class="pull-left">تاریح آگهی</span>
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn"style=" direction: ltr">
-										<button  class="about-view packages-btn">
-											مشاهده آگهی
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-						</div><!--/.col-->
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="/images/packages/p1.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>نام کالا <span class="pull-left">شهر</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												ارزش :
-											</span>
-											500000 <i class="fa fa-angle-left"></i> 100000
-										</p>
-										<p>
-											<span>
-												تعداد : 1
-											</span>
-										 </p><hr>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<span><b>صاحب کالا</b></span>
-										<span class="pull-left">تاریح آگهی</span>
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn"style=" direction: ltr">
-										<button  class="about-view packages-btn">
-											مشاهده آگهی
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-						</div><!--/.col-->
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="/images/packages/p1.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>نام کالا <span class="pull-left">شهر</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												ارزش :
-											</span>
-											500000 <i class="fa fa-angle-left"></i> 100000
-										</p>
-										<p>
-											<span>
-												تعداد : 1
-											</span>
-										 </p><hr>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<span><b>صاحب کالا</b></span>
-										<span class="pull-left">تاریح آگهی</span>
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn"style=" direction: ltr">
-										<button  class="about-view packages-btn">
-											مشاهده آگهی
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-						</div><!--/.col-->
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="/images/packages/p1.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>نام کالا <span class="pull-left">شهر</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												ارزش :
-											</span>
-											500000 <i class="fa fa-angle-left"></i> 100000
-										</p>
-										<p>
-											<span>
-												تعداد : 1
-											</span>
-										 </p><hr>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<span><b>صاحب کالا</b></span>
-										<span class="pull-left">تاریح آگهی</span>
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn"style=" direction: ltr">
-										<button  class="about-view packages-btn">
-											مشاهده آگهی
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-						</div><!--/.col-->
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="/images/packages/p1.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>نام کالا <span class="pull-left">شهر</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												ارزش :
-											</span>
-											500000 <i class="fa fa-angle-left"></i> 100000
-										</p>
-										<p>
-											<span>
-												تعداد : 1
-											</span>
-										 </p><hr>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<span><b>صاحب کالا</b></span>
-										<span class="pull-left">تاریح آگهی</span>
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn"style=" direction: ltr">
-										<button  class="about-view packages-btn">
-											مشاهده آگهی
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-						</div><!--/.col-->
-												<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="/images/packages/p1.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>نام کالا <span class="pull-left">شهر</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												ارزش :
-											</span>
-											500000 <i class="fa fa-angle-left"></i> 100000
-										</p>
-										<p>
-											<span>
-												تعداد : 1
-											</span>
-										 </p><hr>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<span><b>صاحب کالا</b></span>
-										<span class="pull-left">تاریح آگهی</span>
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn"style=" direction: ltr">
-										<button  class="about-view packages-btn">
-											مشاهده آگهی
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.packages-content-->
-			</div><!--/.container-->
-
-		</section><!--/.packages-->
-		<!--packages end-->
-
-
-		<!--subscribe start-->
-		<section id="subs" class="subscribe">
-			<div class="container">
-				<div class="subscribe-title text-center">
-					<h2>
-						با عضویت در خبرنامه جدید ترین خبر هارو بدون
-					</h2>
-					<p>
-						با وارد کردن ایمیل همین حالا عضو شو!
-					</p>
-				</div>
-				<form>
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-							<div class="custom-input-group">
-								<button style="float: left;" class="appsLand-btn subscribe-btn">عضویت</button>
-								<input style="padding-right: 57px;"type="email" class="form-control" placeholder="ایمیلت وارد کن">
-								<i style="position: relative; left: -26px;"class="fa fa-envelope"></i>
-								<div class="clearfix"></div>
-
-							</div>
-
-						</div>
-					</div>
-				</form>
+<html lang="en" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/grid-flex.css">
+	<link rel="shortcut icon" type="image/x-icon" href="pouya.ico">
+	<!-- title -->
+	<title>چرخه</title>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="header col1">
+			<div class="logo"><img src="pouya.png"></div>
+			<div class="site-name  large-screen"><span class="cyan bold">چر</span><span class="red bold">خه</span></div>
+		</div>
+		<div class="header col2">
+			<div class="search">
+				<input aria-label="search" placeholder="جست و جو" type="text">
+				<button><img src="search.png" alt=""></button>
+				<button><img src="filter.png" alt=""></button>
 			</div>
-
-		</section>
-		<!--subscribe end-->
-
-		<!-- footer-copyright start -->
-		<footer  class="footer-copyright">
-			<div class="container">
-				<div class="footer-content"style="padding: 50px 0;">
-					<div class="row">
-
-						<div class="col-sm-6">
-							<div class="single-footer-item text-center">
-								<div class="footer-logo">
-									<a href="/"style="font-size:80px;">
-										taa<span>gh</span>
-										<p>
-											کالاتو طاق بزن
-										</p>
-									</a>
-								</div>
-							</div><!--/.single-footer-item-->
-						</div><!--/.col-->
-
-						<div class="col-sm-3">
-							<div class="single-footer-item">
-								<h2>لینک ها</h2>
-								<div class="single-footer-txt">
-									<p><a href="#">خانه</a></p>
-									<p><a href="#">ورود به حساب کاربری</a></p>
-									<p><a href="#">کالاها</a></p>
-								</div><!--/.single-footer-txt-->
-							</div><!--/.single-footer-item-->
-
-						</div><!--/.col-->
-
-						<div class="col-sm-3">
-							<div class="single-footer-item">
-								<h2 class="text-right">ارتباط</h2>
-								<div class="single-footer-txt text-right">
-									<p style="direction: ltr;">+98 933 360 5858</p>
-									<p class="foot-email"><a href="#">pouya_persia021@yahoo.com</a></p>
-									<p>ایران, رشت</p>
-								</div><!--/.single-footer-txt-->
-							</div><!--/.single-footer-item-->
-						</div><!--/.col-->
-
-					</div><!--/.row-->
-
-				</div><!--/.footer-content-->
-				<hr>
-				<div class="foot-icons ">
-					<ul class="footer-social-links list-inline list-unstyled">
-		                <li><a href="#" target="_blank" class="foot-icon-bg-1"><i class="fa fa-facebook"></i></a></li>
-		                <li><a href="#" target="_blank" class="foot-icon-bg-2"><i class="fa fa-twitter"></i></a></li>
-		                <li><a href="#" target="_blank" class="foot-icon-bg-3"><i class="fa fa-instagram"></i></a></li>
-		        	</ul>
-		        	<p><a href="">PeakCore</a>:designed by</p>
-
-		        </div><!--/.foot-icons-->
-				<div id="scroll-Top">
-					<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-				</div><!--/.scroll-Top-->
-			</div><!-- /.container-->
-
-		</footer><!-- /.footer-copyright-->
-		<!-- footer-copyright end -->
-
-
-	</body>
-	<%-include('components/js-dependencies')-%>
+		</div>
+		<div class="large-screen header col3">
+			<a href=""><div class="notification"><img src="notification.png" alt=""></div></a>
+			<a href=""><div class="transactions"><img src="transaction.png" alt=""></div></a>
+			<a href=""><div class="account"><img src="avatar.png" alt=""></div></a>
+		</div>
+		
+	</div>
+		<!-- body -->
+	<main>
+		<div class="main-container">
+			<div class="card">
+				<%- include('components/card3') -%>
+			</div>
+			<div class="card">
+				<%- include('components/card5') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card4') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card2') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card6') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card4') -%>
+			</div>
+			<div class="card">
+				<%- include('components/card2') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card6') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card3') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card3') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card4') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card5') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card2') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card5') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card3') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card6') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card6') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card5') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card3') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card4') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card2') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card5') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card6') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card4') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card5') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card3') -%>
+				
+			</div>
+			<div class="card">
+				<%- include('components/card6') -%>
+				
+			</div>
+		</div>
+	</main>
+</body>
+<script src="js/flexGrid.js"></script>
+<script type="module">
+	myGrid();
+	window.addEventListener("resize", myGrid);
+</script>
 </html>
